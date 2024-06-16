@@ -1,12 +1,10 @@
-// var mongoose = require('mongoose');
-import mongoose from 'mongoose';
-// var app = require('./app')
-import  app  from './app.js'
-var port = process.env.PORT || 3800
-// require('dotenv').config();
-import dotenv from 'dotenv'
+'use strict'
 
-dotenv.config
+var mongoose = require('mongoose');
+var app = require('./app')
+var port = process.env.PORT || 3800
+require('dotenv').config();
+
 //conexion database
 mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://localhost:27017/tecnopac')

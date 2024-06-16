@@ -1,5 +1,6 @@
-// var User = require('../models/userModel')
-import User from '../models/userModel'
+'use strict'
+
+var User = require('../models/userModel')
 
 //Metodos de prueba
 function prueba(req, res) {
@@ -20,7 +21,6 @@ function saveUser(req, res) {
 		newUser.promote = params.promote
 		newUser.rating = params.rating
 		newUser.last_login = params.last_login
-		// newUser.created_at = params.created_at
 	}
 
 	User.find()

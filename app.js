@@ -1,17 +1,13 @@
+'use strict'
 
-// var express = require('express')
-import express from 'express'
-// var bodyParser = require('body-parser')
-import bodyParser from 'body-parser'
-import cors from 'cors'
-
+var express = require('express')
+var bodyParser = require('body-parser')
 var app = express()
 
 //cargar rutas
-// var user_routes = require('./routes/userRoute')
-import user_routes from './routes/userRoute.js'
+var user_routes = require('./routes/userRoute')
 
-// const cors = require('cors');
+const cors = require('cors');
 
 
 //middlewares
@@ -37,6 +33,4 @@ app.use(cors());
 app.use('/api', user_routes)
 
 //exportar
-module.exports = {
-	app
-};
+module.exports = app

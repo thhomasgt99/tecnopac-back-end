@@ -1,6 +1,5 @@
-'use strict'
-
-var User = require('../models/userModel')
+// var User = require('../models/userModel')
+import User from '../models/userModel'
 
 //Metodos de prueba
 function prueba(req, res) {
